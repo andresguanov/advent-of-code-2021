@@ -23,7 +23,7 @@ const part2 = (positions) => {
     let fuel = 0;
     const indexes = [...new Set(positions)].sort((a, b) => a - b)
 
-    for (let i = 0; i < indexes.length; i++) {
+    for (let i = 0; i < indexes[indexes.length - 1]; i++) {
 
         let fuelIndex = 0;
 
